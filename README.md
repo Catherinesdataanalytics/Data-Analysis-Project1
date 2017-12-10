@@ -6,5 +6,6 @@ Here are some useful links and free resources about Pandas and data structures i
 
 * Coursera Python Data Structures: https://www.coursera.org/learn/python-data/home/welcome
 
-* Datacamp Pandas Foundations: https://campus.datacamp.com/courses/pandas-foundations/data-ingestion-inspection?ex=5
+* Datacamp Pandas Foundations: https://campus.datacamp.com/courses/pandas-foundations
+
 
