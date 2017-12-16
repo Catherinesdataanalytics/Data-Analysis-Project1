@@ -12,4 +12,4 @@ MOOC:
 
 Articles:
 
-* [Data cleanup]( https://trendct.org/2016/08/05/real-world-data-cleanup-with-python-and-pandas/)
+* [Real world Data cleanup using Python]( https://trendct.org/2016/08/05/real-world-data-cleanup-with-python-and-pandas/)
