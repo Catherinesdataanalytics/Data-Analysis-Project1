@@ -6,11 +6,11 @@ Here are some useful links and free resources about Pandas and data structures i
 
 MOOC:
 
-* [Coursera Python Data Structures]( https://www.coursera.org/learn/python-data/home/welcome)
+* [Python Data Structures (Coursera)]( https://www.coursera.org/learn/python-data/home/welcome)
 
-* [Datacamp Pandas Foundations]( https://campus.datacamp.com/courses/pandas-foundations)
+* [Pandas Foundations (Datacamp)]( https://campus.datacamp.com/courses/pandas-foundations)
 
-* [Introduction to data analysis(Udacity)](https://classroom.udacity.com/courses/ud170/lessons/5430778793/concepts/53961386130923)
+* [Introduction to data analysis (Udacity)](https://classroom.udacity.com/courses/ud170/lessons/5430778793/concepts/53961386130923)
 
 Articles:
 
