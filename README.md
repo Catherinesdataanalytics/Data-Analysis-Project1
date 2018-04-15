@@ -4,7 +4,7 @@ In order to go further on the data analytics, master Pandas first.
 
 Here are some useful links and free resources about Pandas and data structures in Python:
 Berkely:
-* [CS 61B](https://sp18.datastructur.es)
+* [CS 61B Data Structures Spring 2018](https://sp18.datastructur.es)
 
 MOOC:
 
