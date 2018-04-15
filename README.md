@@ -3,6 +3,8 @@ In the real data analysis projects, manipulating data and playing with data stru
 In order to go further on the data analytics, master Pandas first.
 
 Here are some useful links and free resources about Pandas and data structures in Python:
+Berkely:
+* [CS 61B](https://sp18.datastructur.es)
 
 MOOC:
 
