@@ -1,0 +1,79 @@
+public class SLList {
+    // the question about private and public
+    //private list : the first item, if exist ,the fisrt of all
+    private IntNode sentinel;
+    
+    private int size;
+    private IntNode first;// others can not access java//public means users can access, private may not allow access
+
+    private static class IntNode {
+        //static means never looks outwards
+        public int item;//the value
+        public IntNode next;//the place where the value lies
+
+        public IntNode(int i, IntNode n){
+            item = i;
+            next = n;
+        }
+    }
+    //creat an empty SLLISt
+    /*public SLList(){
+        first = null;
+        size = 0;
+    }*///bug code this
+    public SLList() {
+        sentinel = new IntNode(-1,null);
+        first = null;
+        size = 0;
+    }
+    //AN sllist is a list of integers, which hided the nakedness within
+    public SLList(int x){
+        sentinel = new IntNode(-1,null);// you can put any number here
+        sentinel.next = new IntNode(x,null);
+        size = 1;
+    }
+
+
+    //add x to the front of the list
+    public void addFirst(int x){
+        sentinel.next = new IntNode(x,first);
+        size +=1;
+    }
+    
+    
+    //add an item to the last of a list
+    public void addLast(int x){
+
+        IntNode p = sentinel;
+        //move p until it reaches the end of the list;
+        while (p.next != null){
+            p = p.next;
+        }
+        p.next = new IntNode(x,null);
+        size+=1;
+    }
+    //return the first item of the list
+    public int getFirst(){
+        return sentinel.next.item;
+    }
+    //return the size of the list
+
+    //elegant
+    private static int size(IntNode p){
+        if (p.next == null) {
+            return 1;
+        }
+        return size(p.next)+1;//recursion
+    }
+    public int size(){
+        return size;
+    }//this public+private totall make sense
+
+    public static void main(String[] args){
+        SLList L = new SLList(15);
+        L.addFirst(10);
+        L.addFirst(5);
+        System.out.println(L.getFirst());
+    }
+
+}
