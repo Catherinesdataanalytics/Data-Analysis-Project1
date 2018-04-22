@@ -1,0 +1,41 @@
+public class SLList {
+    // the question about private and public
+
+
+    private IntNode first;// others can not access java//public means users can access, private may not allow access
+
+    private static class IntNode {
+        //static means never looks outwards
+        public int item;//the value
+        public IntNode next;//the place where the value lies
+
+        public IntNode(int i, IntNode n){
+            item = i;
+            next = n;
+        }
+    }
+
+
+    //AN sllist is a list of integers, which hided the nakedness within
+    public SLList(int x){
+        first = new IntNode(x,null);
+    }
+
+
+    //add x to the front of the list
+    public void addFirst(int x){
+        first = new IntNode(x,first);
+    }
+    //return the first item of the list
+    public int getFirst(){
+        return first.item;
+    }
+
+    public static void main(String[] args){
+        SLList L = new SLList(15);
+        L.addFirst(10);
+        L.addFirst(5);
+        System.out.println(L.getFirst());
+    }
+
+}
