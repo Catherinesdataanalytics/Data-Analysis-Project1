@@ -82,6 +82,53 @@ public class Main {
 //Recursion
 
 //DFS : deep first search
+//Recursion
+
+//DFS : deep first search
+
+//find all leaf node sum
+public class Solution1 {
+    public int leafSum(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        if (root != null && root.left == null && root.right == null) {
+            return root.val;
+        }
+        return leafSum(root.left) + leafSum(root.right);
+    }
+}
+//find the deepth of the tree
+
+public class Solution2 {
+    public int maxDepth（TreeNode node） {
+
+
+        if (node == null) {
+            return 0;
+        }
+        return Math.max(maxDepth(node.left),
+                        maxDepth(node.right))+1;
+    }
+}
+
+//find all the path: same question
+
+//find same pattern tree
+//identical or not identical
+public class Solution3 {
+    public boolean isIdentical(TreeNode a, TreeNode b){
+        if (a == null && b == null){
+            return true;
+        }
+        if ( a!= null && b == null || a == null && b != null){
+            return false;
+        }
+        return a.val == b.val && isIdentical(a.left, b.left) &&
+                isIdentical(a.right, b.right);
+    }
+}
 
 
 
