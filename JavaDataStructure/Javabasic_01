@@ -1,0 +1,30 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        //1.be ware of the double and int
+
+        //2.else if problem
+        int score = 80;
+        if (score >= 85){
+            System.out.println('A');
+        }else if (score >= 75 ){
+            System.out.println('B');
+        }else if (score >= 60){
+            System.out.println('C');
+        }else {
+            System.out.println('D');
+        }
+        //3.array max use for loop
+        int [] numbers = new int[]{3,4,8,6};
+        int max  = 0;
+        for (int number : numbers){
+             max = Math.max(number, max);
+            }
+        System.out.println(max);
+        }
+       //max = Math.
+
+}
