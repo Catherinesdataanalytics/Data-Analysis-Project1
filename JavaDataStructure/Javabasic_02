@@ -41,6 +41,13 @@ this will print out 1.5
 or
 float a  = 3/(2 - 0.0f)
 
+lazy evaluation
+(true || 5/0 >1 )
+if the left is true, the system will ignore the right part. no error happened
+(5/0 >1 || true ) error happend
+if the left is false
+
+(false && 5/0 >1 )the system will ignore the right part
 
 
 
