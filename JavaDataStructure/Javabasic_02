@@ -23,15 +23,28 @@ int b = a//this will be wrong
 // you need to use
 f = (float)a
 int a. = b// this is naturally right
-
+*
 such as:
 float a = 5.7f;
 int b = (int)a;
-
+*
 float a = 5.0f
 or 
 float = float(5.0);
 //5.0 means double naturally
+*
+float a = 3/2;
+printout will be 1.0
+java looks at this as float.
+float a = 3/2.0 or 3.0/2
+this will print out 1.5
+or
+float a  = 3/(2 - 0.0f)
+
+
+
+
+
 
 
 
