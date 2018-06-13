@@ -1,0 +1,37 @@
+
+1)float number problem
+float a = 2.0f;
+float b = 2.00000000f;
+System.out.println(Math.abs(a-b) < 0.000001f);
+//if this is right we consider them as the same
+2) 
+//a < = b // a < b
+a< b - 0.00001f
+
+Conversion
+small datatype and big datatype
+
+int: small + float:big
+int: big + short : small
+
+small can be changed automatically,
+big should need changed to become small.
+
+float a = 5;
+int b = 4 ;
+int b = a//this will be wrong
+// you need to use
+f = (float)a
+int a. = b// this is naturally right
+
+such as:
+float a = 5.7f;
+int b = (int)a;
+
+float a = 5.0f
+or 
+float = float(5.0);
+//5.0 means double naturally
+
+
+
