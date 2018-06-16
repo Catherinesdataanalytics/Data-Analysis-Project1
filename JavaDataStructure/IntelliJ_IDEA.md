@@ -1,3 +1,15 @@
 single step testing: bug icon of IntelliJ
 
 add: break point(red point) of IntelliJ
+* one
+public class Main {
+
+    public static void main(String[] args) {
+        char[]charArr = new char[]{'1','2','3','1','2','3','1','2','3','1','2','3'};//possible problem, if you keep adding the char[], it will exceed the range
+        int number = 0;//the answer will be an negative number
+        for (char ch : charArr){
+            number = number * 10 +ch -'0';
+        }
+        System.out.println(number);
+    }
+}
