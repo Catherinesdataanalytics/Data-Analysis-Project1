@@ -11,3 +11,20 @@ public class Main {
         System.out.println(number);
     }
 }
+//this should be changed to the following
+public class Main {
+
+    public static void main(String[] args) {
+        char[]charArr = new char[]{'1','2','3','1','2','3','1','2','3','1','2','3'};//possible problem, if you keep adding the char[], it will exceed the range
+        int number = 0;//the answer will be an negative number
+        for (char ch : charArr){
+            long newNumber = number * 10L +ch -'0';
+            if (newNumber > Integer.MAX_VALUE){
+                System.out.println(Integer.MAX_VALUE);
+                return;
+            }
+            number = (int) newNumber;
+        }
+        System.out.println(number);
+    }
+}
