@@ -28,3 +28,23 @@ public class Main {
         System.out.println(number);
     }
 }
+
+//another way to change it
+public class Main {
+
+    public static void main(String[] args) {
+        char[]charArr = new char[]{'1','2','3','1','2','3','1','2','3','1','2','3'};//possible problem, if you keep adding the char[], it will exceed the range
+        int number = 0;//the answer will be an negative number
+        for (char ch : charArr){
+            int digit = ch -'0';
+            int newNumber = number * 10 + digit;
+            if (newNumber / 10 == number && newNumber % 10 == digit){
+                System.out.println(Integer.MAX_VALUE);
+                return;
+            }
+            number = (int) newNumber;
+        }
+        System.out.println(number);
+    }
+}
+
