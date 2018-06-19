@@ -1,0 +1,33 @@
+package com.company;
+//find the max and the second max variables
+public class Main {
+
+    public static void main(String[] args) {
+        //how to test your code
+        int[] array = new int[]{8, 3, 2, 1, 10};
+        int[] result = findMax2Number(array);
+        System.out.println(result[0] == 2);
+        System.out.println(result[1] == 8);
+
+    }/*
+    static int[] findMax2Number(int[] array){
+        int max = Integer.MIN_VALUE;
+        for (int number: array){
+            max = Math.max(number, max);
+        }
+        int secondMax = Integer.MIN_VALUE;
+        for (int number: array){
+            if (number == max){
+                continue;
+            }
+            secondMax = Math.max(number, secondMax);
+            max = Math.max(number, max);
+        }
+        return new int[] {max, secondMax};*/
+
+    //how to use one loop to findmax two array
+        
+    }
+}
+
+copy value:
